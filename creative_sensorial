@@ -1,5 +1,8 @@
-const color = ["blue", "green", "crimson", 
-"bronze", "electric purple", "yellow", "coral pink"];
+const message = 'imagine'
+document.querySelector('#header').innerHTML = message
+
+const color = ["blue", "green", "crimson ", 
+"bronze", "purple", "yellow", "pink"];
 
 const taste = ["salty", "sour", "sweet", "tangy", "bitter", "spicy", "savory"];
 
@@ -9,12 +12,16 @@ const smell = ["coffee", "mint", "lemon", "bleach", "grass",
 const texture = ["sticky", "smooth", "bumpy", "prickly", "fuzzy", 
 "slippery", "silky", "soft", "hard"];
 
-function generateSensorialExperience() {
-//get random texture
+
 const randomTexture= texture[Math.floor(Math.random() * texture.length)];
-//get random taste
+
 const randomTaste = taste[Math.floor(Math.random() * taste.length)];
-//get random color
+
 const randomColor = color[Math.floor(Math.random() * color.length)];
-//get random smell
+
 const randomSmell = smell[Math.floor(Math.random() * smell.length)];
+
+document.querySelector('#randomtexture').innerHTML = randomTexture;
+document.querySelector('#randomtaste').innerHTML = randomTaste;
+document.querySelector('#randomcolor').innerHTML = randomColor;
+document.querySelector('#randomsmell').innerHTML = randomSmell;
