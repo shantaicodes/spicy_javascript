@@ -1,0 +1,20 @@
+const color = ["blue", "green", "crimson", 
+"bronze", "electric purple", "yellow", "coral pink"];
+
+const taste = ["salty", "sour", "sweet", "tangy", "bitter", "spicy", "savory"];
+
+const smell = ["coffee", "mint", "lemon", "bleach", "grass",
+ "rose", "pine", "popcorn", "mango"];
+
+const texture = ["sticky", "smooth", "bumpy", "prickly", "fuzzy", 
+"slippery", "silky", "soft", "hard"];
+
+function generateSensorialExperience() {
+//get random texture
+const randomTexture= texture[Math.floor(Math.random() * texture.length)];
+//get random taste
+const randomTaste = taste[Math.floor(Math.random() * taste.length)];
+//get random color
+const randomColor = color[Math.floor(Math.random() * color.length)];
+//get random smell
+const randomSmell = smell[Math.floor(Math.random() * smell.length)];
